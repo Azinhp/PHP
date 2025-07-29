@@ -1,0 +1,103 @@
+/* Basic Reset & Font Import */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif; /* Using Inter font as per common modern UI */
+    background-color: #f4f4f7; /* Light background similar to the image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Form Container Styling */
+.form-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 500px; /* Adjust max-width as needed */
+    box-sizing: border-box; /* Include padding in width */
+}
+
+/* Form Header Styling */
+.form-header h1 {
+    font-size: 2.2em; /* Larger heading */
+    color: #222222; /* Darker text for heading */
+    margin-bottom: 10px;
+}
+
+.form-header p {
+    font-size: 1em;
+    color: #555555; /* Slightly lighter text for description */
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+/* Form Group Styling (Label + Input/Textarea) */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block; /* Make label appear on its own line */
+    font-size: 0.9em;
+    color: #333333;
+    margin-bottom: 8px;
+    font-weight: 600; /* Slightly bolder */
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #e0e0e0; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 1em;
+    color: #333;
+    box-sizing: border-box; /* Crucial for width calculation */
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #aaaaaa; /* Placeholder text color */
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #667eea; /* Blue border on focus */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2); /* Light blue glow on focus */
+}
+
+.form-group textarea {
+    resize: vertical; /* Allow vertical resizing only */
+    min-height: 100px; /* Minimum height for textarea */
+}
+
+/* Send Message Button */
+.send-button {
+    width: 100%;
+    padding: 16px 20px;
+    background-color: #4a55ed; /* Deep blue color */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    margin-top: 10px; /* Space above button */
+}
+
+.send-button:hover {
+    background-color: #3a47d9; /* Slightly darker blue on hover */
+}
+
+.send-button:active {
+    transform: translateY(1px); /* Slight press effect */
+}
